@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    height: 100vh; 
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    position: absolute;  
+    z-index: 10;
+
+}
+
+.background_box {
+    height: 500px;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    z-index: 0;  
+    background: linear-gradient(white 25%, #f0c50b 25%);
+}
+
+.text_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 40%;
+    height: 60%;
+    gap: 25px;
+    margin-top: 60px;
+    margin-left: 20px;
+    
+}
+
+.text_section  p {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.text_section a{ 
+    text-decoration: none;
+}
+
+
+.p_text_section {
+    font-size: 11px;
+
+}
+
+.first_para {
+    font-size: 14px;
+    font-weight: 100;
+
+}
+
+.second_para {
+    padding-bottom: 3px;
+    border-bottom: 2px solid black; 
+    color: black;
+    font-size: 10px;    
+}
+
+
+button {
+    background-color: black;
+    width: 45%;
+    height: 10%;
+    border: none;
+}
+
+button a {
+    color: rgba(255,255,255,0.7);
+    font-size: 10.5px;
+}
+
+.background_box img{
+    height:400px;
+     width:300px;
+}
+
+/* Extra Small Devices (phones) */
+@media screen and (max-width: 575px) {
+  .container{
+    align-items: normal;
+    padding-top: 100px;
+  }
+
+  .background_box{
+    width: 100%;
+    height: 300px;
+  }
+
+  .background_box img{
+    width: 150px;
+    height: 220px;
+  }
+
+  .text_section{
+    gap: 10px;
+    margin-top: 35px;
+  }
+
+  .text_section h1{
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 16px;
+  }
+
+  .text_section p{
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 400 !important;
+  }
+
+ .text_section button{
+    width: 50%;
+    font-size: 14px;
+ }
+  }
+  
+  /* Small Devices (tablets) */
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    .background_box img{
+        width: 250px;
+        height: 350px;
+    }
+
+    .text_section{
+        width: 35%;
+    height: 50%;
+    gap: 12px;
+    margin-top: 20px;
+    }
+
+    .text_section h1{
+        font-weight: 800;
+        font-size: 24px;
+        /* text-align: center; */
+        line-height: 26px;
+    }
+
+    .text_section p{
+        font-size: 10px;
+        font-weight: 600;
+    }
+
+    .text_section button{
+        border: none;
+    width: 50%;
+    }
+
+    .background_box{
+        padding-top: 50px;
+    }
+  }
+
+  
+  
+
+
